@@ -10,8 +10,27 @@ class OnboardingScreen extends StatefulWidget {
 class _OnboardingScreenState extends State<OnboardingScreen> {
   @override
   Widget build(BuildContext context) {
+
+    final size = MediaQuery.sizeOf(context);
+
     return Scaffold(
-      body: Text("data"),
+      // backgroundColor: Color(0xFF7455F7),
+      body: Container(
+        decoration: BoxDecoration(
+          color: Color(0xFF7455F7)
+        ),
+        child: Column(
+          children: [
+            Image.asset('assets/images/onboarding.png'),
+            Container(
+              height: size.height * .4,
+              decoration: BoxDecoration(
+                color: Colors.black,
+              ),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
