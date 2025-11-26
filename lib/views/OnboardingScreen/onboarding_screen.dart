@@ -23,6 +23,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           children: [
             Image.asset('assets/images/onboarding.png'),
             Text('text'),
+            Text('data'),
             Container(
               height: size.height * .4,
               decoration: BoxDecoration(
