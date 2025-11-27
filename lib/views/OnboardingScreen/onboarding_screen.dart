@@ -1,3 +1,4 @@
+import 'package:e_learning_ui/utils/colors.dart';
 import 'package:flutter/material.dart';
 
 class OnboardingScreen extends StatefulWidget {
@@ -17,17 +18,20 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       // backgroundColor: Color(0xFF7455F7),
       body: Container(
         decoration: BoxDecoration(
-          color: Color(0xFF7455F7)
+          // color: Color(0xFF7455F7)
+          color: AppColors.primaryColor
         ),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
+            const SizedBox(),
             Image.asset('assets/images/onboarding.png'),
             Container(
               height: size.height * .4,
               margin: const EdgeInsets.all(15),
               decoration: BoxDecoration(
                 color: Colors.black,
-                borderRadius: BorderRadius.circular(20)
+                borderRadius: BorderRadius.circular(30)
                 
                 
               ),
