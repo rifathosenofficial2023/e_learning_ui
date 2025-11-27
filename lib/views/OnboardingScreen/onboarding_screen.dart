@@ -47,9 +47,29 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   ),
                   ),
                   Text('Discover the things your want to\nlearn and grow with them',
+                  textAlign: TextAlign.center,
                   style: TextStyle(
-
+                    color: Colors.black.withValues(alpha: .5),
                   ),
+                  ),
+                  Container(
+                    padding: EdgeInsets.symmetric(
+                      vertical: 10,
+                      horizontal: 15,
+                    ),
+                    decoration: BoxDecoration(
+                      color: AppColors.primaryColor,
+                      borderRadius: BorderRadius.circular(15)
+                    ),
+                    child: Center(
+                      child: Text('Get Started',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 18,
+                        fontWeight: FontWeight.w700,
+                      ),
+                      ),
+                      ),
                   )
                 ],
               ),
