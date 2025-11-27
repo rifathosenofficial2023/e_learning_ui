@@ -35,7 +35,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 borderRadius: BorderRadius.circular(30) 
               ),
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text('Discover your next skill\nLearn anything you want!',
@@ -53,13 +53,14 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   ),
                   ),
                   Container(
-                    padding: EdgeInsets.symmetric(
-                      vertical: 10,
+                    width: size.width * .4,
+                    padding: const EdgeInsets.symmetric(
+                      vertical: 13,
                       horizontal: 15,
                     ),
                     decoration: BoxDecoration(
                       color: AppColors.primaryColor,
-                      borderRadius: BorderRadius.circular(15)
+                      borderRadius: BorderRadius.circular(10)
                     ),
                     child: Center(
                       child: Text('Get Started',
