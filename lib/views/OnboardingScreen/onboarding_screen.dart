@@ -27,13 +27,31 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             const SizedBox(),
             Image.asset('assets/images/onboarding.png'),
             Container(
+              width: size.width * .9,
               height: size.height * .4,
               margin: const EdgeInsets.all(15),
               decoration: BoxDecoration(
                 color: Colors.black,
-                borderRadius: BorderRadius.circular(30)
-                
-                
+                borderRadius: BorderRadius.circular(30) 
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Text('Discover your next skill\nLearn anything you want!',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.black.withValues(alpha: .8),
+                    fontWeight: FontWeight.bold,
+                    fontSize: 25,
+                  ),
+                  ),
+                  Text('Discover the things your want to\nlearn and grow with them',
+                  style: TextStyle(
+
+                  ),
+                  )
+                ],
               ),
             )
           ],
