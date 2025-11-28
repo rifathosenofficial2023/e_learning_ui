@@ -27,14 +27,37 @@ class HomeScreen extends StatelessWidget {
                 )
             ),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('Hello',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.w700,
-                  fontSize: 25,
+                Row(
+            
+                  children: [
+                    Column(
+                      children: [
+                        Text('Hello',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w700,
+                          fontSize: 30,
+                        ),
+                        ),
+                        Text('Good Morning',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w700,
+                          fontSize: 20,
+                        ),
+                        ),
+                      ],
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white.withValues(alpha: .2),
+                      ),
+                      child: Icon(Icons.notifications),
+                    )
+                  ],
                 ),
-                )
               ],
             ),
           )
