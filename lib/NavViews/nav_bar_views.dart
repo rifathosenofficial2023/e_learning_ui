@@ -30,6 +30,7 @@ class _NavBarViewsState extends State<NavBarViews> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: screens[currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: AppColors.primaryColor,
         unselectedItemColor: Colors.black,
