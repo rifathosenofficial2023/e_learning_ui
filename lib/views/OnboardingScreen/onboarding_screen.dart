@@ -1,3 +1,4 @@
+import 'package:e_learning_ui/NavViews/nav_bar_views.dart';
 import 'package:e_learning_ui/utils/colors.dart';
 import 'package:e_learning_ui/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
@@ -56,6 +57,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                  CustomButton(
                   title: 'Get Started',
                   width: size.width * .4,
+                  onTap: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) =>  const NavBarViews(),),);
+                  },
                   ),
                 ],
               ),
