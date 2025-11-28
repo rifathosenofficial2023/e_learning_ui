@@ -53,7 +53,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     color: Colors.black.withValues(alpha: .5),
                   ),
                   ),
-                const CustomButton(),
+                 CustomButton(
+                  title: 'Get Started',
+                  width: size.width * .4,
+                  ),
                 ],
               ),
             )

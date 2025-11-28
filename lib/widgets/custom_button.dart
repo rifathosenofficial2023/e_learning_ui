@@ -2,14 +2,16 @@ import 'package:e_learning_ui/utils/colors.dart';
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton({super.key});
+  final String title;
+  final double? width;
+  const CustomButton({super.key, required this.title, this.width});
 
   @override
   Widget build(BuildContext context) {
 
     final size = MediaQuery.sizeOf(context);
     return  Container(
-                    width: size.width * .4,
+                    width: width ?? size.width *.9,
                     padding: const EdgeInsets.symmetric(
                       vertical: 13,
                       horizontal: 15,
@@ -27,7 +29,7 @@ class CustomButton extends StatelessWidget {
                       ]
                     ),
                     child: Center(
-                      child: Text('Get Started',
+                      child: Text(title,
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 18,
