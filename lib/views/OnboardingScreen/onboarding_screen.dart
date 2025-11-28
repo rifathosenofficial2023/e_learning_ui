@@ -1,4 +1,5 @@
 import 'package:e_learning_ui/utils/colors.dart';
+import 'package:e_learning_ui/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 
 class OnboardingScreen extends StatefulWidget {
@@ -52,33 +53,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     color: Colors.black.withValues(alpha: .5),
                   ),
                   ),
-                  Container(
-                    width: size.width * .4,
-                    padding: const EdgeInsets.symmetric(
-                      vertical: 13,
-                      horizontal: 15,
-                    ),
-                    decoration: BoxDecoration(
-                      color: AppColors.primaryColor,
-                      borderRadius: BorderRadius.circular(10),
-                      boxShadow: [
-                      BoxShadow(
-                        color: AppColors.primaryColor.withValues(alpha: .3),
-                        blurRadius: 10,
-                        spreadRadius: 5,
-                      )
-                      ]
-                    ),
-                    child: Center(
-                      child: Text('Get Started',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
-                        fontWeight: FontWeight.w700,
-                      ),
-                      ),
-                      ),
-                  )
+                const CustomButton(),
                 ],
               ),
             )
