@@ -60,7 +60,14 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     ),
                     decoration: BoxDecoration(
                       color: AppColors.primaryColor,
-                      borderRadius: BorderRadius.circular(10)
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                      BoxShadow(
+                        color: AppColors.primaryColor.withValues(alpha: .3),
+                        blurRadius: 10,
+                        spreadRadius: 5,
+                      )
+                      ]
                     ),
                     child: Center(
                       child: Text('Get Started',
