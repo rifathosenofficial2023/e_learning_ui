@@ -30,9 +30,10 @@ class HomeScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
-            
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text('Hello',
                         style: TextStyle(
@@ -51,10 +52,30 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                     Container(
+                      padding: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
                         color: Colors.white.withValues(alpha: .2),
+                        shape: BoxShape.circle,
+
                       ),
-                      child: Icon(Icons.notifications),
+                      child: Stack(
+                        alignment: Alignment.topRight,
+                        children: [
+                          const Icon(Icons.notifications, color: Colors.white,),
+                          Positioned(
+                            top: 2,
+                            right: 2,
+                            child: Container(
+                              height: 7,
+                              width: 7,
+                              decoration: BoxDecoration(
+                                color: Colors.orange,
+                                shape: BoxShape.circle,
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
                     )
                   ],
                 ),
