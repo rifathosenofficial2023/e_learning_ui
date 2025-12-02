@@ -39,7 +39,7 @@ class HomeScreen extends StatelessWidget {
                         style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.w700,
-                          fontSize: 31,
+                          fontSize: 30,
                         ),
                         ),
                         Text('Good Morning',
